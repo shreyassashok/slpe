@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #555;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #777;
+            line-height: 1.6;
+        }
+
+        ol.list-numbered {
+            text-align: left;
+            margin-left: 0;
+            padding-left: 20px;
+            color: #777;
+        }
+
+        a {
+            color: #FF5733;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #FF8E5E;
+        }
+
+        .twitter-handle {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .twitter-handle:hover {
+            background-color: #1DA1F2;
+            color: #FFFFFF;
+        }
+    </style>
+    <title>Game Instructions</title>
+</head>
+<body>
+    <a href="https://twitter.com/rebin3" class="twitter-handle">@rebin3</a>
+    <div class="container">
+        <h1>Slope Battles Instructions</h1>
+        <div class="instructions">
+            <h2>Objective</h2>
+            <p>The objective of the game is to place points on the grid, following the rules outlined below. Each point you place contributes to the challenge of maintaining a unique configuration on the grid.</p>
+
+            <h2>Game Termination Conditions</h2>
+            <ol class="list-numbered">
+                <li>
+                    <strong>Placing Outside the Grid:</strong> Attempting to place a point outside the grid's confines ends the game.
+                </li>
+                <li>
+                    <strong>Point Overlap:</strong> Placing a point at an occupied location halts the game.
+                </li>
+                <li>
+                    <strong>Row Duplicates:</strong> Placing two or more points on the same row results in <strong>game termination</strong>.
+                </li>
+                <li>
+                    <strong>Column Duplicates:</strong> Similarly, placing two or more points on the same column results in <strong>game termination</strong>.
+                </li>
+                <li>
+                    <strong>Shared Slopes:</strong> Placing points that create line segments with shared slopes concludes the game.
+                </li>
+            </ol>
+        </div>
+          <p>Are you ready to start the challenge? <a href="index.html" class="start-link">Begin the game</a> and put your strategy to the test!</p>
+
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
